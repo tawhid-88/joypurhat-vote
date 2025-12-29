@@ -28,16 +28,14 @@ import {
 } from "firebase/firestore";
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 
-// TODO: Replace with your actual Firebase Project Config
 const firebaseConfig = {
-  apiKey: "", 
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyAdMS9DDSx839c_jJuDR1ACiQtdFSQZsqc",
+  authDomain: "joypurhat-vote-test.firebaseapp.com",
+  projectId: "joypurhat-vote-test",
+  storageBucket: "joypurhat-vote-test.firebasestorage.app",
+  messagingSenderId: "603832738750",
+  appId: "1:603832738750:web:ce6f3e159938796f5acfef"
 };
-
 // Initialize Firebase only if config is present to prevent crashes in preview
 const app = firebaseConfig.apiKey ? initializeApp(firebaseConfig) : null;
 const db = app ? getFirestore(app) : null;
